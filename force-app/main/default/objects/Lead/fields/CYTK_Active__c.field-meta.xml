@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CYTK_Active__c</fullName>
+    <description>Whether or not a user is an active CYTK user</description>
+    <externalId>false</externalId>
+    <label>CYTK Active</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>CYTK_Active</valueSetName>
+    </valueSet>
+</CustomField>

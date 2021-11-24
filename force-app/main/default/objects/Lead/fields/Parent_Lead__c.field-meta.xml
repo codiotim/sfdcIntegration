@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parent_Lead__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The parent lead, which will be the shop lead with the admin user captured. Workers must have a parent lead.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the parent lead, if this is a worker lead.</inlineHelpText>
+    <label>Parent Lead</label>
+    <referenceTo>Lead</referenceTo>
+    <relationshipLabel>Worker Leads</relationshipLabel>
+    <relationshipName>Worker_Leads</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Lookup</type>
+</CustomField>

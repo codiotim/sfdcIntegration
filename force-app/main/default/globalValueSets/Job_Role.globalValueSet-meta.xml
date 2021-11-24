@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Drivability</fullName>
+        <default>false</default>
+        <label>Drivability</label>
+    </customValue>
+    <customValue>
+        <fullName>Electrical</fullName>
+        <default>false</default>
+        <label>Electrical</label>
+    </customValue>
+    <customValue>
+        <fullName>General</fullName>
+        <default>false</default>
+        <label>General</label>
+    </customValue>
+    <customValue>
+        <fullName>Lube Tech</fullName>
+        <default>false</default>
+        <label>Lube Tech</label>
+    </customValue>
+    <customValue>
+        <fullName>Manager</fullName>
+        <default>false</default>
+        <label>Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>MLR</fullName>
+        <default>false</default>
+        <label>MLR</label>
+    </customValue>
+    <customValue>
+        <fullName>Mobile Tech</fullName>
+        <default>false</default>
+        <label>Mobile Tech</label>
+    </customValue>
+    <customValue>
+        <fullName>Office Manager</fullName>
+        <default>false</default>
+        <label>Office Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Owner</fullName>
+        <default>false</default>
+        <label>Owner</label>
+    </customValue>
+    <customValue>
+        <fullName>Quick Lane</fullName>
+        <default>false</default>
+        <label>Quick Lane</label>
+    </customValue>
+    <customValue>
+        <fullName>Service Manager</fullName>
+        <default>false</default>
+        <label>Service Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Used Car</fullName>
+        <default>false</default>
+        <label>Used Car</label>
+    </customValue>
+    <description>Role of Contact</description>
+    <masterLabel>Job Role</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

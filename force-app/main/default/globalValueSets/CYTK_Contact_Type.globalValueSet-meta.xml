@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>advisor</fullName>
+        <default>false</default>
+        <label>advisor</label>
+    </customValue>
+    <customValue>
+        <fullName>customer</fullName>
+        <default>false</default>
+        <label>customer</label>
+    </customValue>
+    <customValue>
+        <fullName>cytk team</fullName>
+        <default>false</default>
+        <label>cytk team</label>
+    </customValue>
+    <customValue>
+        <fullName>founder</fullName>
+        <default>false</default>
+        <label>founder</label>
+    </customValue>
+    <customValue>
+        <fullName>friend</fullName>
+        <default>false</default>
+        <label>friend</label>
+    </customValue>
+    <customValue>
+        <fullName>investor</fullName>
+        <default>false</default>
+        <label>investor</label>
+    </customValue>
+    <customValue>
+        <fullName>job seeker</fullName>
+        <default>false</default>
+        <label>job seeker</label>
+    </customValue>
+    <customValue>
+        <fullName>media</fullName>
+        <default>false</default>
+        <label>media</label>
+    </customValue>
+    <customValue>
+        <fullName>partner</fullName>
+        <default>false</default>
+        <label>partner</label>
+    </customValue>
+    <customValue>
+        <fullName>pilot</fullName>
+        <default>false</default>
+        <label>pilot</label>
+    </customValue>
+    <customValue>
+        <fullName>potential_advisor</fullName>
+        <default>false</default>
+        <label>potential advisor</label>
+    </customValue>
+    <customValue>
+        <fullName>potential_investor</fullName>
+        <default>false</default>
+        <label>potential investor</label>
+    </customValue>
+    <customValue>
+        <fullName>potential_partner</fullName>
+        <default>false</default>
+        <label>potential partner</label>
+    </customValue>
+    <customValue>
+        <fullName>potential_team_member</fullName>
+        <default>false</default>
+        <label>potential team member</label>
+    </customValue>
+    <customValue>
+        <fullName>potential_vendor</fullName>
+        <default>false</default>
+        <label>potential vendor</label>
+    </customValue>
+    <customValue>
+        <fullName>prospect</fullName>
+        <default>false</default>
+        <label>prospect</label>
+    </customValue>
+    <customValue>
+        <fullName>shareholder</fullName>
+        <default>false</default>
+        <label>shareholder</label>
+    </customValue>
+    <customValue>
+        <fullName>student</fullName>
+        <default>false</default>
+        <label>student</label>
+    </customValue>
+    <customValue>
+        <fullName>tester</fullName>
+        <default>false</default>
+        <label>tester</label>
+    </customValue>
+    <customValue>
+        <fullName>vendor</fullName>
+        <default>false</default>
+        <label>vendor</label>
+    </customValue>
+    <description>Tags for accounts, leads, contacts, prospects. Can have more than one. Formerly CYTK Tags.</description>
+    <masterLabel>CYTK Contact Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

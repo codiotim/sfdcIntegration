@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Potential_CYTK_Users__c</fullName>
+    <description>Number of potential CYTK users. This filed is intended to help dimension the CYTK opportunity</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How many potential users does this prospect bring?</inlineHelpText>
+    <label>Potential CYTK Users</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Potential_CYTK_Users</valueSetName>
+    </valueSet>
+</CustomField>
