@@ -24,6 +24,8 @@ export default class UuidField extends LightningElement {
     }
 
     autofill() {
-        this._uuid = this.uuidv4();
+        var field = this.template.querySelector('lightning-input-field');
+        console.log(field);
+        field.value = this.uuidv4();
     }
 }
