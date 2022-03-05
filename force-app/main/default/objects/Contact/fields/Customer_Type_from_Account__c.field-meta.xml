@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Customer_Type_from_Account__c</fullName>
-    <description>Automated relationship with Account.Customer Type field.</description>
+    <fullName>Customer_Type_From_Account__c</fullName>
     <externalId>false</externalId>
     <formula>IF(AccountId &lt;&gt; NULL, TEXT(Account.Customer_Type__c), &apos;Individual&apos;)</formula>
-    <inlineHelpText>Contact Customer type is pulled from the Account.Customer Type field automatically.</inlineHelpText>
-    <label>Customer Type from Account</label>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Customer Type From Account</label>
     <required>false</required>
     <type>Text</type>
     <unique>false</unique>

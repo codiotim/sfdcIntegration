@@ -1,5 +1,5 @@
 import { api, LightningElement, wire } from 'lwc';
-import HASH_FIELD from '@salesforce/schema/Lead.LeadHash__c';
+import HASH_FIELD from '@salesforce/schema/Lead.leadHash__c';
 import { CloseActionScreenEvent } from 'lightning/actions';
 
 export default class UuidField extends LightningElement {

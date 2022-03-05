@@ -14,5 +14,10 @@
     <columns>Customer_Type__c</columns>
     <columns>LEAD.LEAD_SOURCE</columns>
     <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.COMPANY</field>
+        <operation>contains</operation>
+        <value>weber</value>
+    </filters>
     <label>All Open Leads</label>
 </ListView>

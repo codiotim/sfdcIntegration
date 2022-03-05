@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Populate_Lead_Hash</fullName>
+        <description>Populate the Lead Hash field on import.</description>
+        <field>leadHash__c</field>
+        <formula>MID(CaseSafeID(Id), 4, 8)&amp;&quot;-&quot;&amp;Left(CaseSafeID(Id),4)&amp;&quot;-&quot;&amp; Right(CaseSafeID(Id), 4)&amp;&quot;-&quot;&amp;MID(CaseSafeID(Id),13, 4)&amp;&quot;-&quot;&amp;SUBSTITUTE(LEFT(SUBSTITUTE(SUBSTITUTE(TEXT(CreatedDate), &apos;-&apos;, &apos;&apos;), &apos;:&apos;, &apos;&apos;), 13), &apos; &apos;, &apos;&apos;)</formula>
+        <name>Populate Lead Hash</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <outboundMessages>
+        <fullName>LeadConvertedOutboundMsg</fullName>
+        <apiVersion>53.0</apiVersion>
+        <endpointUrl>https://staging.api.cytk.io/development/admin-server/3.0/push/salesforce</endpointUrl>
+        <fields>CYTK_Active__c</fields>
+        <fields>CYTK_Shop_Id__c</fields>
+        <fields>CYTK_User_Id__c</fields>
+        <fields>Customer_Type__c</fields>
+        <fields>Email</fields>
+        <fields>Id</fields>
+        <fields>Role__c</fields>
+        <fields>Status</fields>
+        <includeSessionId>false</includeSessionId>
+        <integrationUser>td@cytk.io</integrationUser>
+        <name>LeadConvertedOutboundMsg</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <rules>
+        <fullName>LeadConvertedPush</fullName>
+        <actions>
+            <name>LeadConvertedOutboundMsg</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.Role__c</field>
+            <operation>equals</operation>
+            <value>Admin</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.IsConverted</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set Lead Hash</fullName>
+        <actions>
+            <name>Populate_Lead_Hash</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.LeadSource</field>
+            <operation>equals</operation>
+            <value>Original CYTK List,Pilot List,Purchased List</value>
+        </criteriaItems>
+        <description>Used to set the lead hash field for new leads.</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>
